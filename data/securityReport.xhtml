@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>My Report Tool</title>
+        <link href="tabs.css" rel="stylesheet" type="text/css" />
+        <script src="securityReport.js"></script>
+        <script>
+            var previousTabId = 1;
+        </script>
+    </head>
+
+    <body>
+       <div class="content">
+           <ol id="toc">
+               <li id="csp" class="current"><a  href="#" onclick="changeReportLogs(this, 1);">CSP</a></li>
+               <li id="cors"><a  href="#" onclick="changeReportLogs(this, 2);">CORS</a></li>
+               <li id="mixed-content"><a  href="#" onclick="changeReportLogs(this, 3);">Mixed-Content</a></li>
+           </ol>
+           <br />
+           <div id='logMsg'>
+               <select multiple='multiple' id='securityLogList' style='width:100%'> </select> 
+           </div>
+       </div> <!-- DIV class 'Content' ends here -->
+        
+    </body>
+
+</html>
