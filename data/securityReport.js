@@ -42,13 +42,7 @@ function changeReportLogs(evt, curTabId) {
     // Store curTabID for next reference
     previousTabId = curTabId;    
 
-    addon.port.emit("myAddonMessage");
-
 } // end of changeReportLogs() function
 
 
 
-//Receive messages
-addon.port.on("msgIntercepted", function(msgCat) {
-    dump("\n\n Add-on Script: msg Category = " + msgCat);
-});
