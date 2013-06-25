@@ -42,6 +42,9 @@ function changeReportLogs(evt, curTabId) {
     // Store curTabID for next reference
     previousTabId = curTabId;    
 
+    // Set textarea value to Empty
+    document.getElementById('logTextarea').value = "";
+    
 } // end of changeReportLogs() function
 
 
