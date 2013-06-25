@@ -44,3 +44,5 @@ function changeReportLogs(evt, curTabId) {
 
 } // end of changeReportLogs() function
 
+
+
