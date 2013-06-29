@@ -6,7 +6,6 @@
  *
  */
 
-
 // Supplimentary function to change class of tab
 function changeDirectiveClass(id, flag) {
     switch (id) {
@@ -28,6 +27,13 @@ function changeDirectiveClass(id, flag) {
             else
                 document.getElementById("mixed-content").className = "current";
             break;
+        case 4:
+            if (!flag)
+                document.getElementById("ssl").className = "";
+            else
+                document.getElementById("ssl").className = "current";
+            break;
+                
     }
 } // end of changeDirectiveClass() function
 
@@ -44,7 +50,13 @@ function changeReportLogs(evt, curTabId) {
 
     // Set textarea value to Empty
     document.getElementById('logTextarea').value = "";
-    
+
+    // window.postMessage("Message from page script", "Hello World!");
+
+    var event = document.createEvent('CustomEvent');
+    event.initCustomEvent("addon-message", true, true, curTabId);
+    document.documentElement.dispatchEvent(event);
+
 } // end of changeReportLogs() function
 
 
