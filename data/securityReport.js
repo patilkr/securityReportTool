@@ -33,6 +33,12 @@ function changeDirectiveClass(id, flag) {
             else
                 document.getElementById("ssl").className = "current";
             break;
+        case 5:
+            if (!flag)
+                document.getElementById("sec-headers").className = "";
+            else
+                document.getElementById("sec-headers").className = "current";
+            break;
                 
     }
 } // end of changeDirectiveClass() function
