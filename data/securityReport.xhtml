@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
     <head>
-        <title>My Report Tool</title>
+        <title>Security Report Tool</title>
         <link href="tabs.css" rel="stylesheet" type="text/css" />
         <script src="securityReport.js"></script>
         <script>
@@ -16,7 +16,7 @@
        <div class="content">
            <ol id="toc">
                <li id="csp" class="current"><a  href="#" onclick="changeReportLogs(this, 1);">CSP</a></li>
-               <li id="cors"><a  href="#" onclick="changeReportLogs(this, 2);">CORS</a></li>
+               <li id="insec-passwd"><a  href="#" onclick="changeReportLogs(this, 2);">Insec-Passwd</a></li>
                <li id="mixed-content"><a  href="#" onclick="changeReportLogs(this, 3);">Mixed-Content</a></li>
                <li id="ssl"><a  href="#" onclick="changeReportLogs(this, 4);">SSL</a></li>
                <li id="sec-headers"><a  href="#" onclick="changeReportLogs(this, 5);">Sec-Headers</a></li>
@@ -28,6 +28,7 @@
                </select> --> 
              <textarea id="logTextarea" name="something" rows="6" style="width:100%"> </textarea>
            </div>
+           Download Complete Security Report: <a href="" onclick="downloadSecurityReport();"><img src="images/task_report_hot.png" alt="" width="20" height="20" /></a>           
        </div> <!-- DIV class 'Content' ends here -->
         
     </body>
