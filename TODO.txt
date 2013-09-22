@@ -13,8 +13,8 @@ Need to add reporting for following errors.
    webPageSSLBad_Signature
 
 
-Cookie Handling:
- // Cookie checking : isSecure, isHttpOnly
-
-
 Download Icon Integration into developer tools and get rid of UI.
+
+
+Downloading of a detailed security report is only possible once. Why?
+
