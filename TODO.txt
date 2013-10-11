@@ -16,4 +16,14 @@
 2. Download Icon Integration into developer tools and get rid of UI.
 
 3. Add a logic to gather information about real world websites statistics. 
-   Total count for all website and per website count
+   Total count of specific errors for all website and per website error counts
+
+4. Add more embedded links to references for each error category.  
+   For e clicking on the text "userCSP" would take you to the addon.mozilla.org page 
+   where you could download it.  Or clikcing on HTTPOnly would take you to an article / wikipedia 
+   page describing what it is.
+   
+5. How to get the report for the latest site only?
+
+6. One sentence for each error with an arrow to expand/collapse for more details.  
+   That way, the developer can see all issues quickly at once, and then drill down on each of them.
