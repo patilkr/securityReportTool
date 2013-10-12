@@ -20,10 +20,13 @@
 
 4. Add more embedded links to references for each error category.  
    For e clicking on the text "userCSP" would take you to the addon.mozilla.org page 
-   where you could download it.  Or clikcing on HTTPOnly would take you to an article / wikipedia 
-   page describing what it is.
+   where you could download it.  Or clicking on HTTPOnly would take you to an article / wikipedia 
+   page describing what it is. ------ DONE
    
 5. How to get the report for the latest site only?
 
 6. One sentence for each error with an arrow to expand/collapse for more details.  
    That way, the developer can see all issues quickly at once, and then drill down on each of them.
+   
+   <a href=\"#\" onclick=\"showHide('webPageCSP'); showHide('webPageCSP1');\" id=\"x\" style=\"color: #d5d5d5; text-decoration:none;\">[+]</a>
+   
