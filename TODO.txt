@@ -28,5 +28,7 @@
 6. One sentence for each error with an arrow to expand/collapse for more details.  
    That way, the developer can see all issues quickly at once, and then drill down on each of them.
    
-   <a href=\"#\" onclick=\"showHide('webPageCSP'); showHide('webPageCSP1');\" id=\"x\" style=\"color: #d5d5d5; text-decoration:none;\">[+]</a>
+   <a href=\"#\" onclick=\"showHide('webPageCSP', 'webPageCSP-x'); showHide('webPageCSP1', 'webPageCSP-x');\" id=\"webPageCSP-x\" style=\"color: #d5d5d5; text-decoration:none;\">[+]</a>
+   
+   <a href=\"#\" onclick=\"showHide('webPageCSP', 'webPageCSP-x');\" id=\"webPageCSP-x\" style=\"color: #d5d5d5; text-decoration:none;\">[+]</a>
    
